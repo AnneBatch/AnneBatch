@@ -3,7 +3,7 @@
 session_start();
 
 require_once('database.php');
-require_once('signup_class.php');
+require_once('registration.php');
 
 $users = new SignUp('localhost', 'database', 'root', 'password');
 $users->setName($_POST['username']);
